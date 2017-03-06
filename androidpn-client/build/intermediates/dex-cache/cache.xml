@@ -3,21 +3,21 @@
 
     <item
         is-multidex="false"
-        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\jivesoftware\smackx\3.1.0\ba1365c7e5f3cf7f7641b354677b3f54a6ea5a15\smackx-3.1.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ba1365c7e5f3cf7f7641b354677b3f54a6ea5a15">
-        <dex dex="C:\Users\Administrator\AndroidStudioProjects\androidpn-client\app\build\intermediates\pre-dexed\debug\smackx-3.1.0_bd75e9020f2db76dc8176c4ba7a7daa67a4a3d90.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\jivesoftware\smack\3.1.0\916a0fe08d840a08c950f49fb59b961e14d673b8\smack-3.1.0.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="916a0fe08d840a08c950f49fb59b961e14d673b8">
         <dex dex="C:\Users\Administrator\AndroidStudioProjects\androidpn-client\app\build\intermediates\pre-dexed\debug\smack-3.1.0_4a0484c446b636670610ba321ee5a5cbe2b5538d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\jivesoftware\smackx\3.1.0\ba1365c7e5f3cf7f7641b354677b3f54a6ea5a15\smackx-3.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ba1365c7e5f3cf7f7641b354677b3f54a6ea5a15">
+        <dex dex="C:\Users\Administrator\AndroidStudioProjects\androidpn-client\app\build\intermediates\pre-dexed\debug\smackx-3.1.0_bd75e9020f2db76dc8176c4ba7a7daa67a4a3d90.jar" />
     </item>
 
 </items>

@@ -377,6 +377,26 @@ public class XmppManager {
                             xmppManager.getUsername(),
                             xmppManager.getPassword(), XMPP_RESOURCE_NAME);
                     Log.d(LOGTAG, "Loggedn in successfully");
+                    Thread aa=new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            while (connection.isConnected()){
+                                connection.sendPacket(new Packet() {
+                                    @Override
+                                    public String toXML() {
+                                        Log.e(LOGTAG,"!!!!!!!!!!!!!!!!!!!!!!");
+                                        return " ";
+                                    }
+                                });
+                                try {
+                                    Thread.sleep(5000);
+                                }catch (Exception e){
+                                    e.printStackTrace();
+                                }
+                            }
+                        }
+                    });
+                    aa.start();
                     // connection listener
                     if (xmppManager.getConnectionListener() != null) {
                         xmppManager.getConnection().addConnectionListener(

@@ -20,6 +20,7 @@ import org.androidpn.client.ServiceManager;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 
@@ -44,7 +45,6 @@ public class DemoAppActivity extends Activity {
                 ServiceManager.viewNotificationSettings(DemoAppActivity.this);
             }
         });
-
         // Start the service
         ServiceManager serviceManager = new ServiceManager(this);
         serviceManager.setNotificationIcon(R.drawable.notification);
