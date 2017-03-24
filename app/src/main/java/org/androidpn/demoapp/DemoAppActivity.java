@@ -15,6 +15,7 @@
  */
 package org.androidpn.demoapp;
 
+import org.androidpn.client.LogUtil;
 import org.androidpn.client.ServiceManager;
 
 import android.app.Activity;
@@ -49,6 +50,10 @@ public class DemoAppActivity extends Activity {
         ServiceManager serviceManager = new ServiceManager(this);
         serviceManager.setNotificationIcon(R.drawable.notification);
         serviceManager.startService();
+
+        String a=new String("abc");
+        String b="abc";
+        Log.e("!!!!!!!!!!!",""+ (a==b));
     }
 
 }
