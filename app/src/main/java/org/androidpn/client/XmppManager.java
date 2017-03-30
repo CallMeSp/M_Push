@@ -213,7 +213,7 @@ public class XmppManager {
     private boolean isConnected() {
         return connection != null && connection.isConnected();
     }
-    private boolean isAuthenticated() {
+    public boolean isAuthenticated() {
         return connection != null && connection.isConnected()
                 && connection.isAuthenticated();
     }
@@ -449,6 +449,11 @@ public class XmppManager {
                     PacketListener packetListener = xmppManager
                             .getNotificationPacketListener();
                     connection.addPacketListener(packetListener, packetFilter);
+
+                    //同步锁->serviceManager
+                    synchronized (xmppManager){
+                        xmppManager.notifyAll();
+                    }
                 } catch (XMPPException e) {
                     Log.e(LOGTAG, "LoginTask.run()... xmpp error");
                     Log.e(LOGTAG, "Failed to login to xmpp server. Caused by: "

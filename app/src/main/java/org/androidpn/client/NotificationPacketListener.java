@@ -72,12 +72,13 @@ public class NotificationPacketListener implements PacketListener {
 
                 xmppManager.getContext().sendBroadcast(intent);
 
-
                 //发送确认回执
                 DeliverConfirmIQ deliverConfirmIQ=new DeliverConfirmIQ();
                 deliverConfirmIQ.setUuid(notificationId);
                 deliverConfirmIQ.setType(IQ.Type.SET);
                 xmppManager.getConnection().sendPacket(deliverConfirmIQ);
+
+
             }
         }
 

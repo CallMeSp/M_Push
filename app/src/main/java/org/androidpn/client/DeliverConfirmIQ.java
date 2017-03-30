@@ -2,6 +2,9 @@ package org.androidpn.client;
 
 import org.jivesoftware.smack.packet.IQ;
 
+import java.util.Scanner;
+import java.util.Stack;
+
 /**
  * Created by Administrator on 2017/3/24.
  */
@@ -28,4 +31,12 @@ public class DeliverConfirmIQ extends IQ {
         buf.append("</").append("notification").append("> ");
         return buf.toString();
     }
+    void et(){
+        Scanner sc = new Scanner(System.in);
+        String x=sc.nextLine();
+        String[] ss=x.split(" ");
+        int[] realnum=new int[10];
+        int[] copy=realnum.clone();
+    }
+
 }
