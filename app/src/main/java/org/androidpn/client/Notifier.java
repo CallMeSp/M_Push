@@ -52,7 +52,7 @@ public class Notifier {
     }
 
     public void notify(String notificationId, String apiKey, String title,
-            String message, String uri) {
+            String message, String uri,String imageUrl) {
         Log.d(LOGTAG, "notify()...");
 
         Log.d(LOGTAG, "notificationId=" + notificationId);
@@ -100,6 +100,7 @@ public class Notifier {
 
             Intent intent = new Intent(context,
                     NotificationDetailsActivity.class);
+            intent.putExtra(Constants.NOTIFICATION_IMAGEURL,imageUrl);
             intent.putExtra(Constants.NOTIFICATION_ID, notificationId);
             intent.putExtra(Constants.NOTIFICATION_API_KEY, apiKey);
             intent.putExtra(Constants.NOTIFICATION_TITLE, title);

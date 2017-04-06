@@ -68,12 +68,13 @@ public class NotificationDetailsActivity extends Activity {
                 .getStringExtra(Constants.NOTIFICATION_MESSAGE);
         String notificationUri = intent
                 .getStringExtra(Constants.NOTIFICATION_URI);
-
+        String notificationImageUrl=intent.getStringExtra(Constants.NOTIFICATION_IMAGEURL);
         Log.d(LOGTAG, "notificationId=" + notificationId);
         Log.d(LOGTAG, "notificationApiKey=" + notificationApiKey);
         Log.d(LOGTAG, "notificationTitle=" + notificationTitle);
         Log.d(LOGTAG, "notificationMessage=" + notificationMessage);
         Log.d(LOGTAG, "notificationUri=" + notificationUri);
+        Log.d(LOGTAG, "notificationImageUrl=" + notificationImageUrl);
 
         //        Display display = getWindowManager().getDefaultDisplay();
         //        View rootView;

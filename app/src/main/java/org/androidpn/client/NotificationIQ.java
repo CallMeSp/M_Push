@@ -34,6 +34,16 @@ public class NotificationIQ extends IQ {
 
     private String uri;
 
+    private String imageUrl;
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
+    }
+
     public NotificationIQ() {
     }
 
